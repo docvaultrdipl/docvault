@@ -103,8 +103,8 @@ const VehiclesView = ({
 
   return (
     <div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
-        <h2>Vehicle Insurance List</h2>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'space-between', alignItems: 'center', marginBottom: 24, backgroundColor: '#1677FF',height: 70, padding: 16, borderRadius: 10}}>
+        <h2 style={{ marginBottom: 16, fontSize: 30, textTransform: 'Capitalize', borderRadius: 10, color: '#fff'}}>Vehicle Insurance List</h2>
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
           <Button icon={<DownloadOutlined />} onClick={handleExport} loading={exporting}>
             Export to Excel
@@ -117,7 +117,7 @@ const VehiclesView = ({
               <Button icon={<AppstoreAddOutlined />} onClick={onAddMulti}>
                 Add to Multiple Categories
               </Button>
-              <Button type="primary" icon={<PlusOutlined />} onClick={onAdd}>
+              <Button type="primary" icon={<PlusOutlined />} onClick={onAdd} style={{backgroundColor: '#c2d7f37c'}}>
                 Add Vehicle
               </Button>
             </>

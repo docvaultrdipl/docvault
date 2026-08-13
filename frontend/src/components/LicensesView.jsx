@@ -103,8 +103,8 @@ const LicensesView = ({
 
   return (
     <div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
-        <h2>Document & License List</h2>
+      <div style={{ marginBottom: 16,height: 70, display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'space-between', alignItems: 'center', width: '100%', backgroundColor: '#1677FF',padding: 16, borderRadius: 10 }}>
+        <h2 style={{fontSize: 30, textTransform: 'Capitalize', color: '#fff' }}>Document & License List</h2>
         <div style={{ display: 'flex', gap: 8 }}>
           <Button icon={<DownloadOutlined />} onClick={handleExport} loading={exporting}>
             Export to Excel
@@ -114,7 +114,7 @@ const LicensesView = ({
               <Button icon={<UploadOutlined />} onClick={onBulkImport}>
                 Import from Excel
               </Button>
-              <Button type="primary" icon={<PlusOutlined />} onClick={onAdd}>
+              <Button style={{ backgroundColor: '#c2d7f37c'}} type="primary" icon={<PlusOutlined />} onClick={onAdd}>
                 Add Document
               </Button>
             </>

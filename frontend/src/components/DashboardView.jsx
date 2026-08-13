@@ -77,7 +77,7 @@ const DashboardView = ({
 
   return (
     <div>
-      <h2 style={{ marginBottom: 16 }}>Dashboard Overview</h2>
+      <h2 style={{ marginBottom: 16, fontSize: 30, textTransform: 'Capitalize', backgroundColor: '#1677FF',padding: 16, borderRadius: 10, color: '#fff' }}>Dashboard Overview</h2>
 
       <div style={{ fontSize: 13, color: 'rgba(0,0,0,0.55)', marginBottom: 8 }}>Licenses</div>
       <Row gutter={[16, 16]} style={{ marginBottom: 20 }}>

@@ -108,7 +108,7 @@ const CalendarView = ({ calendarItems }) => {
   return (
     <div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-        <h2>Renewal Calendar</h2>
+        <h2 style={{ margin: 0,fontSize: 30, textTransform: 'Capitalize', backgroundColor: '#1677FF',padding: 16, borderRadius: 10, color: '#fff',width: '100%'}}>Renewal Calendar</h2>
         <Button icon={<PrinterOutlined />} onClick={handlePrintMonth}>
           Print {selectedDate.format('MMMM')}'s Report
         </Button>

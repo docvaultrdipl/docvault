@@ -62,8 +62,9 @@ const GlobalSearch = ({ licenses, vehicles, onSelectLicense, onSelectVehicle }) 
       onSelect={handleSelect}
       style={{ width: 280 }}
       popupMatchSelectWidth={360}
+      style={{ height: 35, width: '20%' }}
     >
-      <Input allowClear prefix={<SearchOutlined />} placeholder="Search licenses & vehicles..." />
+      <Input style={{ height: 35 }} allowClear prefix={<SearchOutlined />} placeholder="Search licenses & vehicles..." />
     </AutoComplete>
   );
 };

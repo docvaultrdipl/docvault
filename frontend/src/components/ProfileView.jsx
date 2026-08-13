@@ -60,11 +60,11 @@ const ProfileView = ({
 
   return (
     <Card bordered={false}>
-       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, alignItems: 'center', marginBottom: '24px' }}>
+       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, alignItems: 'center', marginBottom: '24px', background: '#1677FF', padding: '24px', borderRadius:10, color: '#fff' }}>
           <Avatar size={64} icon={<UserOutlined />} style={{ marginRight: '24px' }} />
           <div>
             <h2>{userProfile?.name}</h2>
-            <p style={{ color: 'rgba(0, 0, 0, 0.65)' }}>{userProfile?.email}</p>
+            <p style={{ color: '#fff' }}>{userProfile?.email}</p>
           </div>
           <Button
             type={editingProfile ? "default" : "primary"}
@@ -76,7 +76,7 @@ const ProfileView = ({
               }
               setEditingProfile(!editingProfile);
             }}
-            style={{marginLeft: 'auto'}}
+            style={{marginLeft: 'auto',backgroundColor: '#c2d7f37c'}}
           >
             {editingProfile ? 'Cancel' : 'Edit Profile'}
           </Button>
